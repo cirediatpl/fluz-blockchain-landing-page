@@ -1,0 +1,39 @@
+@import "~include-media/dist/_include-media.scss";
+
+.hero {
+    height: auto;
+    width: 98%;
+    position: relative;
+    // top: 5rem;
+    margin: 0 auto !important;
+    // background: linear-gradient(180deg, #edb1b7 0%, #e9beae 70.93%, #e9d3c1 100%);
+    @include media("<=tablet") {
+      padding: 50px 0px 100px 0px;
+    }
+
+    &-text {
+        flex-direction: column;
+        justify-content: center;
+        text-align: left;
+        padding: 5% 5% 5% 10% !important;
+        margin-bottom: 0 !important;
+    
+        h1 {
+          color: #ff5959;
+          margin-bottom: 0;
+        }
+    
+        h2 {
+          margin-top: 1rem;
+        }
+    }
+
+    &-image {
+        position: relative;
+        .hero-image-content {
+          padding-top: 15%;
+          padding-bottom: 15%;
+          height: auto !important;
+        }
+    }
+}

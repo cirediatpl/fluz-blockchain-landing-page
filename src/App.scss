@@ -1,0 +1,89 @@
+@import "~include-media/dist/_include-media.scss";
+@import "bulma/sass/utilities/_all.sass";
+@import "bulma/sass/grid/columns.sass";
+@import "bulma/sass/base/helpers.sass";
+@import "bulma/sass/elements/button.sass";
+@import "bulma/sass/components/navbar.sass";
+
+.App {
+  text-align: center;
+  line-height: 1.75em;
+  font-family: "DIN Pro", "Arial Narrow", Arial, sans-serif;
+  overflow: hidden;
+}
+
+@font-face {
+  font-family: DIN Pro;
+  src: url("assets/fonts/DINNextLTPro-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: DIN Pro;
+  font-weight: bold;
+  src: url("assets/fonts/DINNextLTPro-Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: DIN Pro Heavy;
+  font-weight: heavy;
+  src: url("assets/fonts/DINNextLTPro-Heavy.otf") format("opentype");
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.first-title {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  color: black;
+  font-size: 3rem;
+  font-weight: 500;
+}
+.second-title {
+  text-align: left;
+  color: #fe4e4e;
+  font-size: 1rem;
+}
+
+.title-caption {
+  margin-top: 0;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  @include media("<tablet") {
+    flex-direction: column;
+  }
+}
+
+// @include media("<=phone", ">phone","<=tablet",">tablet","<desktop")
